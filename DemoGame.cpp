@@ -7,15 +7,16 @@
  * @since  2020-05
  */
 
-#include "DemoGame.hpp"
+#include "Game.hpp"
 #include "FootSoldier.hpp"
 #include "FootCommander.hpp"
 
 #include <cassert>
+#include <sys/types.h>
 
 namespace WarGame {
 
-		DemoGame::DemoGame(): board (8, 8) {
+        Game::Game(): board (8, 8) {
 			// Add soldiers for player 1:
 			assert(!board.has_soldiers(1));
 			board[{0,1}] = new FootSoldier(1);
@@ -33,7 +34,7 @@ namespace WarGame {
 			// In your game, you can put more soldier types, such as the sniper and the paramedic types.
 		}
 
-		uint DemoGame::play() {
+		uint Game::play() {
 			board.move(1, {0,1}, Board::MoveDIR::Up);      // FootSoldier of player 1 moves forward and attacks.
 			if (!board.has_soldiers(2)) return 1;
 
