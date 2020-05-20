@@ -6,8 +6,6 @@
 using namespace WarGame;
 TEST_CASE("MINI GAME")
 {
-
-
 }
 
 
