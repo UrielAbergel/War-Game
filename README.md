@@ -1,5 +1,5 @@
-<div dir="rtl" lang="he">
 ![כותרת](https://user-images.githubusercontent.com/54840897/82796284-f6fb8200-9e7d-11ea-8661-691ac25058f0.PNG)
+
 
 
 במטלה זו עליכם לתכנן משחק מלחמה לשני שחקנים על לוח מלבני.
