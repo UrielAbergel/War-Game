@@ -3,7 +3,7 @@
 //
 
 #include "FootCommander.hpp"
-int FootCommander::hit(Solider & solider)
+int FootCommander::hit()
 {
     return 0;
 }

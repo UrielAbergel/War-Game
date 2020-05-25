@@ -17,7 +17,7 @@ public:
         this->player_id = player_id;
     }
 
-    int hit(Solider & solider);
+    int hit();
     Point get_loc();
     int get_id();
 };

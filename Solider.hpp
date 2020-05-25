@@ -24,7 +24,7 @@ public:
     int health;
     Point * location;
 
-    virtual int hit(Solider & solider) = 0;
+    virtual int hit() = 0;
     virtual Point get_loc() = 0;
     virtual int get_id() = 0;
 };

@@ -3,7 +3,7 @@
 //
 
 #include "Sniper.hpp"
-int Sniper::hit(Solider & solider)
+int Sniper::hit()
 {
     return 0;
 }

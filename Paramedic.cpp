@@ -4,7 +4,7 @@
 
 #include "Paramedic.hpp"
 
-int Paramedic::hit(Solider & solider)
+int Paramedic::hit()
 {
     return 0;
 }

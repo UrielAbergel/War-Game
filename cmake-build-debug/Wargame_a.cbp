@@ -88,7 +88,7 @@
 		<Unit filename="/home/uriel/CLionProjects/Wargame-a/Game.cpp">
 			<Option target="Wargame_a"/>
 		</Unit>
-		<Unit filename="/home/uriel/CLionProjects/Wargame-a/Game.h">
+		<Unit filename="/home/uriel/CLionProjects/Wargame-a/Game.hpp">
 			<Option target="Wargame_a"/>
 		</Unit>
 		<Unit filename="/home/uriel/CLionProjects/Wargame-a/ParamedicCommander.cpp">

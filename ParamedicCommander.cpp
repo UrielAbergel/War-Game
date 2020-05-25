@@ -2,7 +2,7 @@
 // Created by uriel on 20/05/2020.
 //
 #include "ParamedicCommander.hpp"
-int ParamedicCommander::hit(Solider & solider)
+int ParamedicCommander::hit()
 {
     return 0;
 }

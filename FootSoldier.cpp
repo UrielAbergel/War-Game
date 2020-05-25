@@ -3,7 +3,7 @@
 //
 
 #include "FootSoldier.hpp"
-int FootSoldier::hit(Solider & solider)
+int FootSoldier::hit()
 {
     return 0;
 }

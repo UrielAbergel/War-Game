@@ -4,7 +4,7 @@
 
 #include "SniperCommander.hpp"
 
-int SniperCommander::hit(Solider & solider)
+int SniperCommander::hit()
 {
     return 0;
 }
