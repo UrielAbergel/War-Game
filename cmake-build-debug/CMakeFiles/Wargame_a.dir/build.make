@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/112/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/111/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/111/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uriel/CLionProjects/Wargame-a
+CMAKE_SOURCE_DIR = /home/yair/Desktop/CPP/War-Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uriel/CLionProjects/Wargame-a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/Desktop/CPP/War-Game/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Wargame_a.dir/depend.make
@@ -59,55 +59,55 @@ include CMakeFiles/Wargame_a.dir/flags.make
 
 CMakeFiles/Wargame_a.dir/Demo.cpp.o: CMakeFiles/Wargame_a.dir/flags.make
 CMakeFiles/Wargame_a.dir/Demo.cpp.o: ../Demo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Wargame_a.dir/Demo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wargame_a.dir/Demo.cpp.o -c /home/uriel/CLionProjects/Wargame-a/Demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Wargame_a.dir/Demo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wargame_a.dir/Demo.cpp.o -c /home/yair/Desktop/CPP/War-Game/Demo.cpp
 
 CMakeFiles/Wargame_a.dir/Demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wargame_a.dir/Demo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uriel/CLionProjects/Wargame-a/Demo.cpp > CMakeFiles/Wargame_a.dir/Demo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/Desktop/CPP/War-Game/Demo.cpp > CMakeFiles/Wargame_a.dir/Demo.cpp.i
 
 CMakeFiles/Wargame_a.dir/Demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wargame_a.dir/Demo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/Wargame-a/Demo.cpp -o CMakeFiles/Wargame_a.dir/Demo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/Demo.cpp -o CMakeFiles/Wargame_a.dir/Demo.cpp.s
 
 CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o: CMakeFiles/Wargame_a.dir/flags.make
 CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o: ../ParamedicCommander.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o -c /home/uriel/CLionProjects/Wargame-a/ParamedicCommander.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o -c /home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp
 
 CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uriel/CLionProjects/Wargame-a/ParamedicCommander.cpp > CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp > CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.i
 
 CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/Wargame-a/ParamedicCommander.cpp -o CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp -o CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.s
 
 CMakeFiles/Wargame_a.dir/Test.cpp.o: CMakeFiles/Wargame_a.dir/flags.make
 CMakeFiles/Wargame_a.dir/Test.cpp.o: ../Test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Wargame_a.dir/Test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wargame_a.dir/Test.cpp.o -c /home/uriel/CLionProjects/Wargame-a/Test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Wargame_a.dir/Test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wargame_a.dir/Test.cpp.o -c /home/yair/Desktop/CPP/War-Game/Test.cpp
 
 CMakeFiles/Wargame_a.dir/Test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wargame_a.dir/Test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uriel/CLionProjects/Wargame-a/Test.cpp > CMakeFiles/Wargame_a.dir/Test.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/Desktop/CPP/War-Game/Test.cpp > CMakeFiles/Wargame_a.dir/Test.cpp.i
 
 CMakeFiles/Wargame_a.dir/Test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wargame_a.dir/Test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/Wargame-a/Test.cpp -o CMakeFiles/Wargame_a.dir/Test.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/Test.cpp -o CMakeFiles/Wargame_a.dir/Test.cpp.s
 
 CMakeFiles/Wargame_a.dir/Game.cpp.o: CMakeFiles/Wargame_a.dir/flags.make
 CMakeFiles/Wargame_a.dir/Game.cpp.o: ../Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Wargame_a.dir/Game.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wargame_a.dir/Game.cpp.o -c /home/uriel/CLionProjects/Wargame-a/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Wargame_a.dir/Game.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Wargame_a.dir/Game.cpp.o -c /home/yair/Desktop/CPP/War-Game/Game.cpp
 
 CMakeFiles/Wargame_a.dir/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Wargame_a.dir/Game.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uriel/CLionProjects/Wargame-a/Game.cpp > CMakeFiles/Wargame_a.dir/Game.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/Desktop/CPP/War-Game/Game.cpp > CMakeFiles/Wargame_a.dir/Game.cpp.i
 
 CMakeFiles/Wargame_a.dir/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Wargame_a.dir/Game.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uriel/CLionProjects/Wargame-a/Game.cpp -o CMakeFiles/Wargame_a.dir/Game.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/Game.cpp -o CMakeFiles/Wargame_a.dir/Game.cpp.s
 
 # Object files for target Wargame_a
 Wargame_a_OBJECTS = \
@@ -125,7 +125,7 @@ Wargame_a: CMakeFiles/Wargame_a.dir/Test.cpp.o
 Wargame_a: CMakeFiles/Wargame_a.dir/Game.cpp.o
 Wargame_a: CMakeFiles/Wargame_a.dir/build.make
 Wargame_a: CMakeFiles/Wargame_a.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Wargame_a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Wargame_a"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Wargame_a.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -138,6 +138,6 @@ CMakeFiles/Wargame_a.dir/clean:
 .PHONY : CMakeFiles/Wargame_a.dir/clean
 
 CMakeFiles/Wargame_a.dir/depend:
-	cd /home/uriel/CLionProjects/Wargame-a/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uriel/CLionProjects/Wargame-a /home/uriel/CLionProjects/Wargame-a /home/uriel/CLionProjects/Wargame-a/cmake-build-debug /home/uriel/CLionProjects/Wargame-a/cmake-build-debug /home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles/Wargame_a.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yair/Desktop/CPP/War-Game/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yair/Desktop/CPP/War-Game /home/yair/Desktop/CPP/War-Game /home/yair/Desktop/CPP/War-Game/cmake-build-debug /home/yair/Desktop/CPP/War-Game/cmake-build-debug /home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/Wargame_a.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Wargame_a.dir/depend
 

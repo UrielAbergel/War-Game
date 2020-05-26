@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/uriel/CLionProjects/Wargame-a/Demo.cpp" "/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles/Wargame_a.dir/Demo.cpp.o"
-  "/home/uriel/CLionProjects/Wargame-a/Game.cpp" "/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles/Wargame_a.dir/Game.cpp.o"
-  "/home/uriel/CLionProjects/Wargame-a/ParamedicCommander.cpp" "/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o"
-  "/home/uriel/CLionProjects/Wargame-a/Test.cpp" "/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles/Wargame_a.dir/Test.cpp.o"
+  "/home/yair/Desktop/CPP/War-Game/Demo.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/Wargame_a.dir/Demo.cpp.o"
+  "/home/yair/Desktop/CPP/War-Game/Game.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/Wargame_a.dir/Game.cpp.o"
+  "/home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o"
+  "/home/yair/Desktop/CPP/War-Game/Test.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/Wargame_a.dir/Test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

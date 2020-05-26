@@ -64,6 +64,7 @@ WarGame::Board Create_Commander_Borad()
     borad_num_2[{5,4}] = new ParamedicCommander(2);
     return borad_num_2;
 }
+// 59 tests
 TEST_CASE("ADD SOLIDER AND COMMANDER GAME CHECK")
 {
  WarGame::Board false_case(8,8);
@@ -173,10 +174,50 @@ TEST_CASE("ATTAK AND HEAL CASE")
             CHECK(CHECK_1[{1,4}]->health == 150);
     CHECK_1[{1,4}]->hit();
             CHECK(CHECK_1[{0,5}] == nullptr) ;
-
-
 }
 
+TEST_CASE("Full game test")
+{
+
+    WarGame::Board CHECK_3 = CreateBoradNum1();
+
+    CHECK_3.move(1, {1,0}, WarGame::Board::Up);
+    CHECK_3.move(1, {2,0}, WarGame::Board::Up);
+    CHECK_3.move(1, {3,0}, WarGame::Board::Up);
+    CHECK_3.move(1, {4,0}, WarGame::Board::Up);
+            CHECK(CHECK_3[{4,0}] == typeid(Sniper));
+            CHECK(CHECK_3[{4,0}]->health == 100);
+    CHECK_3[{5,0}]->hit();
+            CHECK(CHECK_3[{4,0}]->health == 80);
+    CHECK_3[{5,0}]->hit();
+            CHECK(CHECK_3[{4,0}]->health == 60);
+    CHECK_3[{5,0}]->hit();
+            CHECK(CHECK_3[{4,0}]->health == 40);
+    CHECK_3[{5,0}]->hit();
+            CHECK(CHECK_3[{4,0}]->health == 20);
+    CHECK_3[{5,0}]->hit();
+            CHECK(CHECK_3[{4,0}] == typeid(nullptr)); // DEAD
+
+    CHECK_3.move(2, {5,1}, WarGame::Board::Down);
+    CHECK_3.move(2, {4,1}, WarGame::Board::Down);
+    CHECK_3.move(2, {3,1}, WarGame::Board::Down);
+            CHECK(CHECK_3[{4,0}] == typeid(FootSoldier));
+    for (int i = 20 ; i >=1 ; i--)
+    {
+                CHECK(CHECK_3[{1,1}]->health == 10*i);
+        CHECK_3[{2,1}]->hit();
+    }
+            CHECK(CHECK_3[{1,1}] == typeid(nullptr)); // DEAD
+    CHECK_3.move(2, {2,1}, WarGame::Board::Right);
+    CHECK_3.move(2, {2,0}, WarGame::Board::Down);
+    for (int j = 9; j <=1; j--) {
+        CHECK_3[{1,0}]->hit();
+        CHECK_3[{0,0}]->hit();
+                CHECK(CHECK_3[{0,0}]->health == 10*j);
+                CHECK(CHECK_3[{1,0}]->health == 10*j);
+    }
+
+}
 
 
 
