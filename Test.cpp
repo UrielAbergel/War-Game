@@ -201,22 +201,23 @@ TEST_CASE("Full game test")
     CHECK_3.move(2, {5,1}, WarGame::Board::Down);
     CHECK_3.move(2, {4,1}, WarGame::Board::Down);
     CHECK_3.move(2, {3,1}, WarGame::Board::Down);
-            CHECK(CHECK_3[{4,0}] == typeid(FootSoldier));
+    CHECK(CHECK_3[{4,0}] == typeid(FootSoldier));
     for (int i = 20 ; i >=1 ; i--)
     {
-                CHECK(CHECK_3[{1,1}]->health == 10*i);
+        CHECK(CHECK_3[{1,1}]->health == 10*i);
         CHECK_3[{2,1}]->hit();
     }
-            CHECK(CHECK_3[{1,1}] == typeid(nullptr)); // DEAD
+    CHECK(CHECK_3[{1,1}] == typeid(nullptr)); // DEAD
     CHECK_3.move(2, {2,1}, WarGame::Board::Right);
     CHECK_3.move(2, {2,0}, WarGame::Board::Down);
     for (int j = 9; j <=1; j--) {
         CHECK_3[{1,0}]->hit();
         CHECK_3[{0,0}]->hit();
-                CHECK(CHECK_3[{0,0}]->health == 10*j);
-                CHECK(CHECK_3[{1,0}]->health == 10*j);
+        CHECK(CHECK_3[{0,0}]->health == 10*j);
+        CHECK(CHECK_3[{1,0}]->health == 10*j);
     }
-
+    CHECK_3[{1,0}]->hit();
+    CHECK(CHECK_3[{0,0}] == typeid(nullptr)); // DEAD
 }
 
 
