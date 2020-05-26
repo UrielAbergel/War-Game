@@ -7,33 +7,33 @@
  * @author Erel Segal-Halevi
  * @since  2020-05
  */
-
+#pragma once
 #include <string>
 #include <vector>
 #include <stdexcept>
-#include "Solider.hpp"
+#include "Soldier.hpp"
 
 namespace WarGame {
 
     class Board {
     private:
-        std::vector<std::vector<Solider*>> board;
+        std::vector<std::vector<Soldier*>> board;
     public:
         uint cols, rows;
         enum MoveDIR { Up, Down, Right, Left };
 
         Board(uint numRows, uint numCols) :
-                board(numRows, std::vector<Solider*>(numCols, nullptr))
+                board(numRows, std::vector<Soldier*>(numCols, nullptr))
                 {
                     this->cols = numCols;
                     this->rows = numRows;
                 }
 
         // operator for putting soldiers on the game-board during initialization.
-        Solider*& operator[](std::pair<int,int> location);
+        Soldier*& operator[](std::pair<int,int> location);
 
         // operator for reading which soldiers are on the game-board.
-        Solider* operator[](std::pair<int,int> location) const;
+        Soldier* operator[](std::pair<int,int> location) const;
 
         // The function "move" tries to move the soldier of player "player"
         //     from the "source" location to the "target" location,

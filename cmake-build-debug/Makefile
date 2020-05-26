@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Wargame_a
+# Target rules for targets named War-Game
 
 # Build rule for target.
-Wargame_a: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Wargame_a
-.PHONY : Wargame_a
+War-Game: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 War-Game
+.PHONY : War-Game
 
 # fast build rule for target.
-Wargame_a/fast:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/build
-.PHONY : Wargame_a/fast
+War-Game/fast:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/build
+.PHONY : War-Game/fast
 
 Demo.o: Demo.cpp.o
 
@@ -129,7 +129,7 @@ Demo.o: Demo.cpp.o
 
 # target to build an object file
 Demo.cpp.o:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Demo.cpp.o
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Demo.cpp.o
 .PHONY : Demo.cpp.o
 
 Demo.i: Demo.cpp.i
@@ -138,7 +138,7 @@ Demo.i: Demo.cpp.i
 
 # target to preprocess a source file
 Demo.cpp.i:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Demo.cpp.i
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Demo.cpp.i
 .PHONY : Demo.cpp.i
 
 Demo.s: Demo.cpp.s
@@ -147,89 +147,8 @@ Demo.s: Demo.cpp.s
 
 # target to generate assembly for a file
 Demo.cpp.s:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Demo.cpp.s
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Demo.cpp.s
 .PHONY : Demo.cpp.s
-
-Game.o: Game.cpp.o
-
-.PHONY : Game.o
-
-# target to build an object file
-Game.cpp.o:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Game.cpp.o
-.PHONY : Game.cpp.o
-
-Game.i: Game.cpp.i
-
-.PHONY : Game.i
-
-# target to preprocess a source file
-Game.cpp.i:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Game.cpp.i
-.PHONY : Game.cpp.i
-
-Game.s: Game.cpp.s
-
-.PHONY : Game.s
-
-# target to generate assembly for a file
-Game.cpp.s:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Game.cpp.s
-.PHONY : Game.cpp.s
-
-ParamedicCommander.o: ParamedicCommander.cpp.o
-
-.PHONY : ParamedicCommander.o
-
-# target to build an object file
-ParamedicCommander.cpp.o:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o
-.PHONY : ParamedicCommander.cpp.o
-
-ParamedicCommander.i: ParamedicCommander.cpp.i
-
-.PHONY : ParamedicCommander.i
-
-# target to preprocess a source file
-ParamedicCommander.cpp.i:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.i
-.PHONY : ParamedicCommander.cpp.i
-
-ParamedicCommander.s: ParamedicCommander.cpp.s
-
-.PHONY : ParamedicCommander.s
-
-# target to generate assembly for a file
-ParamedicCommander.cpp.s:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.s
-.PHONY : ParamedicCommander.cpp.s
-
-Test.o: Test.cpp.o
-
-.PHONY : Test.o
-
-# target to build an object file
-Test.cpp.o:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Test.cpp.o
-.PHONY : Test.cpp.o
-
-Test.i: Test.cpp.i
-
-.PHONY : Test.i
-
-# target to preprocess a source file
-Test.cpp.i:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Test.cpp.i
-.PHONY : Test.cpp.i
-
-Test.s: Test.cpp.s
-
-.PHONY : Test.s
-
-# target to generate assembly for a file
-Test.cpp.s:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/Test.cpp.s
-.PHONY : Test.cpp.s
 
 # Help Target
 help:
@@ -239,19 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... Wargame_a"
+	@echo "... War-Game"
 	@echo "... Demo.o"
 	@echo "... Demo.i"
 	@echo "... Demo.s"
-	@echo "... Game.o"
-	@echo "... Game.i"
-	@echo "... Game.s"
-	@echo "... ParamedicCommander.o"
-	@echo "... ParamedicCommander.i"
-	@echo "... ParamedicCommander.s"
-	@echo "... Test.o"
-	@echo "... Test.i"
-	@echo "... Test.s"
 .PHONY : help
 
 

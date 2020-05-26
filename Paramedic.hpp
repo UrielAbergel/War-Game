@@ -4,9 +4,9 @@
 
 #ifndef UNTITLED_PARAMEDIC_HPP
 #define UNTITLED_PARAMEDIC_HPP
-#include "Solider.hpp"
+#include "Soldier.hpp"
 
-class Paramedic : public Solider {
+class Paramedic : public Soldier {
 private:
     int player_id;
 public:

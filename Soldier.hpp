@@ -18,7 +18,7 @@ public:
 };
 
 
-class Solider
+class Soldier
 {
 public:
     int health;

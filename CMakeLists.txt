@@ -3,4 +3,4 @@ project(Wargame_a)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Wargame_a Demo.cpp ParamedicCommander.cpp Test.cpp Game.cpp Game.hpp)
+add_executable(War-Game Demo.cpp)

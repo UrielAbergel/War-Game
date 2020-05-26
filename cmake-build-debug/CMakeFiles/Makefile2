@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/yair/Desktop/CPP/War-Game/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Wargame_a.dir/all
+all: CMakeFiles/War-Game.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Wargame_a.dir/clean
+clean: CMakeFiles/War-Game.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Wargame_a.dir
+# Target rules for target CMakeFiles/War-Game.dir
 
 # All Build rule for target.
-CMakeFiles/Wargame_a.dir/all:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/depend
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target Wargame_a"
-.PHONY : CMakeFiles/Wargame_a.dir/all
+CMakeFiles/War-Game.dir/all:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/depend
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target War-Game"
+.PHONY : CMakeFiles/War-Game.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Wargame_a.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles 5
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Wargame_a.dir/all
+CMakeFiles/War-Game.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/War-Game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/Wargame_a.dir/rule
+.PHONY : CMakeFiles/War-Game.dir/rule
 
 # Convenience name for target.
-Wargame_a: CMakeFiles/Wargame_a.dir/rule
+War-Game: CMakeFiles/War-Game.dir/rule
 
-.PHONY : Wargame_a
+.PHONY : War-Game
 
 # clean rule for target.
-CMakeFiles/Wargame_a.dir/clean:
-	$(MAKE) -f CMakeFiles/Wargame_a.dir/build.make CMakeFiles/Wargame_a.dir/clean
-.PHONY : CMakeFiles/Wargame_a.dir/clean
+CMakeFiles/War-Game.dir/clean:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/clean
+.PHONY : CMakeFiles/War-Game.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

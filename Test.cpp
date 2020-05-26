@@ -46,6 +46,51 @@ WarGame::Board CreateBoradNum1()
     return borad_num_1;
 }
 
+WarGame::Board CreateBoradNum2()
+{
+    WarGame::Board borad_num_2 (6,6);
+    borad_num_2[{0,0}] = new FootSoldier(1);
+    borad_num_2[{0,1}] = new FootSoldier(1);
+    borad_num_2[{0,2}] = new FootSoldier(1);
+    borad_num_2[{0,3}] = new FootSoldier(1);
+    borad_num_2[{0,4}] = new FootSoldier(1);
+    borad_num_2[{0,5}] = new FootSoldier(1);
+    borad_num_2[{1,0}] = new FootSoldier(1);
+    borad_num_2[{1,1}] = new FootSoldier(1);
+    borad_num_2[{1,2}] = new FootSoldier(1);
+    borad_num_2[{1,3}] = new FootSoldier(1);
+    borad_num_2[{1,4}] = new FootSoldier(1);
+    borad_num_2[{1,5}] = new FootSoldier(1);
+    borad_num_2[{2,0}] = new FootSoldier(1);
+    borad_num_2[{2,1}] = new FootSoldier(1);
+    borad_num_2[{2,2}] = new FootSoldier(1);
+    borad_num_2[{2,3}] = new FootSoldier(1);
+    borad_num_2[{2,4}] = new FootSoldier(1);
+    borad_num_2[{2,5}] = new FootSoldier(1);
+    borad_num_2[{3,0}] = new FootSoldier(2);
+    borad_num_2[{3,1}] = new FootSoldier(2);
+    borad_num_2[{3,2}] = new FootSoldier(2);
+    borad_num_2[{3,3}] = new FootSoldier(2);
+    borad_num_2[{3,4}] = new FootSoldier(2);
+    borad_num_2[{3,5}] = new FootSoldier(2);
+    borad_num_2[{4,0}] = new FootSoldier(2);
+    borad_num_2[{4,1}] = new FootSoldier(2);
+    borad_num_2[{4,2}] = new FootSoldier(2);
+    borad_num_2[{4,3}] = new FootSoldier(2);
+    borad_num_2[{4,4}] = new FootSoldier(2);
+    borad_num_2[{4,5}] = new FootSoldier(2);
+    borad_num_2[{5,0}] = new FootSoldier(2);
+    borad_num_2[{5,1}] = new FootSoldier(2);
+    borad_num_2[{5,2}] = new FootSoldier(2);
+    borad_num_2[{5,3}] = new FootSoldier(2);
+    borad_num_2[{5,4}] = new FootSoldier(2);
+    borad_num_2[{5,5}] = new FootSoldier(2);
+
+
+
+    return borad_num_2;
+}
+
 
 WarGame::Board Create_Commander_Borad()
 {
@@ -106,27 +151,27 @@ TEST_CASE("Moves")
     CHECK(typeid(CHECK_1[{0,0}]) == typeid(FootSoldier));
     CHECK_1.move(1,{0,0},WarGame::Board::Up);
     CHECK(typeid(CHECK_1[{1,0}]) == typeid(FootSoldier)) ;
-    CHECK(typeid(CHECK_1[{0,0}]) == nullptr) ;
+    CHECK(CHECK_1[{0,0}] == nullptr) ;
 
     CHECK(typeid(CHECK_1[{5,1}]) == typeid(FootSoldier));
     CHECK_1.move(1,{5,1},WarGame::Board::Down);
     CHECK(typeid(CHECK_1[{4,1}]) == typeid(FootSoldier)) ;
-    CHECK(typeid(CHECK_1[{5,1}]) == nullptr) ;
+    CHECK(CHECK_1[{5,1}] == nullptr) ;
 
     CHECK(typeid(CHECK_1[{1,1}]) == typeid(ParamedicCommander));
     CHECK_1.move(1,{1,1},WarGame::Board::Left);
     CHECK(typeid(CHECK_1[{1,0}]) == typeid(ParamedicCommander)) ;
-    CHECK(typeid(CHECK_1[{1,1}]) == nullptr) ;
+    CHECK(CHECK_1[{1,1}] == nullptr) ;
 
     CHECK(typeid(CHECK_1[{1,0}]) == typeid(ParamedicCommander));
     CHECK_1.move(1,{1,0},WarGame::Board::Right);
     CHECK(typeid(CHECK_1[{1,1}]) == typeid(ParamedicCommander)) ;
-    CHECK(typeid(CHECK_1[{0,0}]) == nullptr) ;
+    CHECK(CHECK_1[{0,0}] == nullptr) ;
 
     CHECK(typeid(CHECK_1[{1,1}]) == typeid(ParamedicCommander));
     CHECK_1.move(1,{1,1},WarGame::Board::Up);
     CHECK(typeid(CHECK_1[{2,1}]) == typeid(ParamedicCommander)) ;
-    CHECK(typeid(CHECK_1[{1,1}]) == nullptr) ;
+    CHECK(CHECK_1[{1,1}] == nullptr) ;
 
 
 }
@@ -179,46 +224,114 @@ TEST_CASE("ATTAK AND HEAL CASE")
 TEST_CASE("Full game test")
 {
 
-    WarGame::Board CHECK_3 = CreateBoradNum1();
+    WarGame::Board CHECK_3 = CreateBoradNum2();
 
     CHECK_3.move(1, {1,0}, WarGame::Board::Up);
     CHECK_3.move(1, {2,0}, WarGame::Board::Up);
     CHECK_3.move(1, {3,0}, WarGame::Board::Up);
     CHECK_3.move(1, {4,0}, WarGame::Board::Up);
-            CHECK(CHECK_3[{4,0}] == typeid(Sniper));
-            CHECK(CHECK_3[{4,0}]->health == 100);
+    CHECK(typeid(CHECK_3[{4,0}]) == typeid(FootSoldier));
+    CHECK(CHECK_3[{4,0}]->health == 100);
     CHECK_3[{5,0}]->hit();
-            CHECK(CHECK_3[{4,0}]->health == 80);
+    CHECK(CHECK_3[{4,0}]->health == 80);
     CHECK_3[{5,0}]->hit();
-            CHECK(CHECK_3[{4,0}]->health == 60);
+    CHECK(CHECK_3[{4,0}]->health == 60);
     CHECK_3[{5,0}]->hit();
-            CHECK(CHECK_3[{4,0}]->health == 40);
+    CHECK(CHECK_3[{4,0}]->health == 40);
     CHECK_3[{5,0}]->hit();
-            CHECK(CHECK_3[{4,0}]->health == 20);
+    CHECK(CHECK_3[{4,0}]->health == 20);
     CHECK_3[{5,0}]->hit();
-            CHECK(CHECK_3[{4,0}] == typeid(nullptr)); // DEAD
+    CHECK(CHECK_3[{4,0}] == nullptr); // DEAD
 
     CHECK_3.move(2, {5,1}, WarGame::Board::Down);
     CHECK_3.move(2, {4,1}, WarGame::Board::Down);
     CHECK_3.move(2, {3,1}, WarGame::Board::Down);
-    CHECK(CHECK_3[{4,0}] == typeid(FootSoldier));
-    for (int i = 20 ; i >=1 ; i--)
-    {
-        CHECK(CHECK_3[{1,1}]->health == 10*i);
-        CHECK_3[{2,1}]->hit();
-    }
-    CHECK(CHECK_3[{1,1}] == typeid(nullptr)); // DEAD
+    CHECK(typeid(CHECK_3[{4,0}]) == typeid(FootSoldier));
+    CHECK(CHECK_3[{1,1}]->health == 200);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 200);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 190);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 180);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 170);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 160);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 150);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 140);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 130);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 120);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 110);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 100);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 90);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 80);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 70);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 60);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 50);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 40);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 30);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 20);
+    CHECK_3[{2,1}]->hit();
+            CHECK(CHECK_3[{1,1}]->health == 10);
+    CHECK_3[{2,1}]->hit();
+    CHECK(CHECK_3[{1,1}] == nullptr); // DEAD
     CHECK_3.move(2, {2,1}, WarGame::Board::Right);
     CHECK_3.move(2, {2,0}, WarGame::Board::Down);
-    for (int j = 9; j <=1; j--) {
-        CHECK_3[{1,0}]->hit();
-        CHECK_3[{0,0}]->hit();
-        CHECK(CHECK_3[{0,0}]->health == 10*j);
-        CHECK(CHECK_3[{1,0}]->health == 10*j);
-    }
     CHECK_3[{1,0}]->hit();
-    CHECK(CHECK_3[{0,0}] == typeid(nullptr)); // DEAD
+    CHECK_3[{0,0}]->hit();
+    CHECK(CHECK_3[{0,0}]->health == 90);
+    CHECK(CHECK_3[{1,0}]->health == 90);
+    CHECK_3[{1,0}]->hit();
+    CHECK_3[{0,0}]->hit();
+            CHECK(CHECK_3[{0,0}]->health == 80);
+            CHECK(CHECK_3[{1,0}]->health == 80);
+    CHECK_3[{1,0}]->hit();
+    CHECK_3[{0,0}]->hit();
+            CHECK(CHECK_3[{0,0}]->health == 70);
+            CHECK(CHECK_3[{1,0}]->health == 70);
+    CHECK_3[{1,0}]->hit();
+    CHECK_3[{0,0}]->hit();
+            CHECK(CHECK_3[{0,0}]->health == 60);
+            CHECK(CHECK_3[{1,0}]->health == 60);
+    CHECK_3[{1,0}]->hit();
+    CHECK_3[{0,0}]->hit();
+            CHECK(CHECK_3[{0,0}]->health == 50);
+            CHECK(CHECK_3[{1,0}]->health == 50);
+    CHECK_3[{1,0}]->hit();
+    CHECK_3[{0,0}]->hit();
+            CHECK(CHECK_3[{0,0}]->health == 40);
+            CHECK(CHECK_3[{1,0}]->health == 40);
+    CHECK_3[{1,0}]->hit();
+    CHECK_3[{0,0}]->hit();
+            CHECK(CHECK_3[{0,0}]->health == 30);
+            CHECK(CHECK_3[{1,0}]->health == 30);
+    CHECK_3[{1,0}]->hit();
+    CHECK_3[{0,0}]->hit();
+            CHECK(CHECK_3[{0,0}]->health == 20);
+            CHECK(CHECK_3[{1,0}]->health == 20);
+    CHECK_3[{1,0}]->hit();
+    CHECK_3[{0,0}]->hit();
+            CHECK(CHECK_3[{0,0}]->health == 10);
+            CHECK(CHECK_3[{1,0}]->health == 10);
+    CHECK_3[{1,0}]->hit();
+    CHECK(CHECK_3[{0,0}] == nullptr); // DEAD
 }
+
 
 
 

@@ -5,9 +5,9 @@
 #ifndef UNTITLED_FOOTSOLDIER_HPP
 #define UNTITLED_FOOTSOLDIER_HPP
 
-#include "Solider.hpp"
+#include "Soldier.hpp"
 
-class FootSoldier : public Solider
+class FootSoldier : public Soldier
 {
 private:
     int player_id;

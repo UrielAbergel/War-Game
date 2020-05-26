@@ -5,10 +5,10 @@
 #ifndef UNTITLED_PARAMEDICCOMMANDER_PP
 #define UNTITLED_PARAMEDICCOMMANDER_PP
 
-#include "Solider.hpp"
+#include "Soldier.hpp"
 #include "Board.hpp"
 
-class ParamedicCommander : public Solider {
+class ParamedicCommander : public Soldier {
 private:
     int player_id;
 public:

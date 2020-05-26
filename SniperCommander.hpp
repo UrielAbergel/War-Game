@@ -5,9 +5,9 @@
 #ifndef UNTITLED_SNIPERCOMMANDER_HPP
 #define UNTITLED_SNIPERCOMMANDER_HPP
 
-#include "Solider.hpp"
+#include "Soldier.hpp"
 
-class SniperCommander : public Solider{
+class SniperCommander : public Soldier{
 private:
     int player_id;
 public:
