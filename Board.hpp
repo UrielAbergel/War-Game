@@ -23,11 +23,11 @@ namespace WarGame {
         enum MoveDIR { Up, Down, Right, Left };
 
         Board(uint numRows, uint numCols) :
-                board(numRows, std::vector<Soldier*>(numCols, nullptr))
-                {
-                    this->cols = numCols;
-                    this->rows = numRows;
-                }
+            board(numRows, std::vector<Soldier*>(numCols, nullptr))
+            {
+                this->cols = numCols;
+                this->rows = numRows;
+            }
 
         // operator for putting soldiers on the game-board during initialization.
         Soldier*& operator[](std::pair<int,int> location);
@@ -50,6 +50,16 @@ namespace WarGame {
 
         // returns true iff the board contains one or more soldiers of the given player.
         bool has_soldiers(uint player_number) const;
+
+        // returns the require destination
+        std::pair<int,int> return_dest_loc(std::pair<int,int> source, MoveDIR direction);
+
+        // return the nearest enemy
+        std::pair<int,int> find_nearest_enemy(std::pair<int,int>, int player_id);
+
+        double dist(std::pair<int, int> from, std::pair<int, int> to);
+
+        void attack(std::pair<int, int> attacker_location);
     };
 
 }

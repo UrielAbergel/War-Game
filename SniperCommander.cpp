@@ -4,15 +4,24 @@
 
 #include "SniperCommander.hpp"
 
-int SniperCommander::hit()
+int SniperCommander::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)
 {
     return 0;
 }
-Point SniperCommander::get_loc()
+
+std::pair<int,int> SniperCommander::get_loc()
 {
-    return {0,0};
+    return {this->location.first, this->location.second};
 }
+
 int SniperCommander::get_id()
 {
     return this->player_id;
+}
+
+Soldier &SniperCommander::operator=(Soldier *copy_from) {
+    Soldier* the_copy = new SniperCommander(copy_from->get_id());
+    the_copy->health = copy_from->health;
+    Soldier & ret = *the_copy;
+    return ret;
 }

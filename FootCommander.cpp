@@ -3,15 +3,29 @@
 //
 
 #include "FootCommander.hpp"
-int FootCommander::hit()
+
+#define DAMAGE 20
+#define OWN_SOLDIER_DAMAGE 10
+
+int FootCommander::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)
 {
-    return 0;
+    return DAMAGE + Soldier::num_of_foot_soliders*OWN_SOLDIER_DAMAGE;
 }
-Point FootCommander::get_loc()
+
+std::pair<int,int> FootCommander::get_loc()
 {
-    return {0,0};
+    return {this->location.first ,this->location.second};
 }
+
 int FootCommander::get_id()
 {
     return this->player_id;
+}
+
+Soldier& FootCommander::operator=(Soldier* copy_from)
+{
+    Soldier* the_copy = new FootCommander(copy_from->get_id());
+    the_copy->health = copy_from->health;
+    Soldier & ret = *the_copy;
+    return ret;
 }

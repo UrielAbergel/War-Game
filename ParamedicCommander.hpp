@@ -6,7 +6,8 @@
 #define UNTITLED_PARAMEDICCOMMANDER_PP
 
 #include "Soldier.hpp"
-#include "Board.hpp"
+
+#define MAX_HEALTH 200
 
 class ParamedicCommander : public Soldier {
 private:
@@ -15,10 +16,13 @@ public:
     ParamedicCommander(int player_id)
     {
         this->player_id = player_id;
+        this->health = MAX_HEALTH;
     }
-    int hit();
-    Point get_loc();
+    int hit(std::vector<std::vector<Soldier*>> board, int rows, int cols);
+    std::pair<int,int> get_loc();
     int get_id();
+    Soldier& operator=(Soldier* copy_from);
+
 };
 
 
