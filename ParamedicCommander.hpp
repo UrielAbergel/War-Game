@@ -13,15 +13,24 @@ class ParamedicCommander : public Soldier {
 private:
     int player_id;
 public:
-    ParamedicCommander(int player_id)
+    explicit ParamedicCommander(int player_id)
     {
         this->player_id = player_id;
         this->health = MAX_HEALTH;
     }
+
+    ~ParamedicCommander()
+    {
+        delete this;
+    }
+
     int hit(std::vector<std::vector<Soldier*>> board, int rows, int cols);
     std::pair<int,int> get_loc();
     int get_id();
     Soldier& operator=(Soldier* copy_from);
+    void return_to_max_health();
+    std::pair<int, int> find_solider_to_active_the_skill(std::vector<std::vector<Soldier*>> board);
+
 
 };
 

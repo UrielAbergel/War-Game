@@ -2,9 +2,24 @@
 // Created by uriel on 20/05/2020.
 //
 #include "ParamedicCommander.hpp"
+#include "Paramedic.hpp"
+
 int ParamedicCommander::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)
 {
-    return 0;
+    find_solider_to_active_the_skill(board);
+    for (int i = 0; i < board.size(); ++i)
+    {
+        for (int j = 0; j < board.at(0).size(); ++j)
+        {
+            if (board[i][j] != nullptr && board[i][j]->get_id() == player_id)
+            {
+                if (typeid(board[i][j]) == typeid(Paramedic))
+                {
+                    board[i][j]->hit(board ,rows, cols);
+                }
+            }
+        }
+    }
 }
 std::pair<int,int> ParamedicCommander::get_loc()
 {
@@ -21,4 +36,26 @@ Soldier &ParamedicCommander::operator=(Soldier *copy_from) {
     the_copy->health = copy_from->health;
     Soldier & ret = *the_copy;
     return ret;
+}
+
+void ParamedicCommander::return_to_max_health()
+{
+    this->health = MAX_HEALTH;
+}
+
+std::pair<int, int> ParamedicCommander::find_solider_to_active_the_skill(std::vector<std::vector<Soldier*>> board)
+{
+
+    for (int i = this->get_loc().first-1; i < this->get_loc().first+1; ++i)
+    {
+        for (int j = this->get_loc().second-1; j < this->get_loc().second+1; ++j)
+        {
+
+            if (board[i][j] != nullptr && i != j && board[i][j]->get_id() == player_id)
+            {
+                board[i][j]->return_to_max_health();
+            }
+        }
+    }
+    return {0,0};
 }

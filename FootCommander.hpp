@@ -13,23 +13,27 @@ class FootCommander : public Soldier{
 private:
     int player_id;
 public:
-    FootCommander(int player_id)
+
+    explicit FootCommander(int player_id)
     {
         this->player_id = player_id;
         this->health = MAX_HEALTH;
     }
 
-    ~FootCommander() override
+    ~FootCommander()
     {
         delete this;
     }
 
     int hit(std::vector<std::vector<Soldier*>> board, int rows, int cols);
+    std::pair<int, int> find_solider_to_active_the_skill(std::vector<std::vector<Soldier*>> board);
     std::pair<int,int> get_loc();
     int get_id();
     Soldier& operator=(Soldier* copy_from);
+    void return_to_max_health();
+
 };
 
-int Soldier::num_of_foot_soliders = 0;
+
 
 #endif //UNTITLED_FOOTCOMMANDER_HPP

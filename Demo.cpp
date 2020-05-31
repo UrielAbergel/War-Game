@@ -6,7 +6,7 @@
 **/
 
 #include <iostream>
-#include "DemoGame.hpp"
+#include "DemoGame.cpp"
 
 using namespace std;
 

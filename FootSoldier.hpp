@@ -15,24 +15,29 @@ class FootSoldier : public Soldier
 private:
     int player_id;
 public:
+
     FootSoldier(int player_id)
     {
         this->player_id = player_id;
         this->health = MAX_HEALTH;
-        Soldier::num_of_foot_soliders++;
-
     }
 
-    ~FootSoldier() override
+    ~FootSoldier()
     {
-        Soldier::num_of_foot_soliders--;
         delete this;
     }
 
     int hit(std::vector<std::vector<Soldier*>> board, int rows, int cols);
     std::pair<int,int> get_loc();
     int get_id();
-    Soldier& operator=(Soldier* copy_from);
+    Soldier& copy();
+    std::pair<int, int> find_solider_to_active_the_skill(std::vector<std::vector<Soldier*>> board);
+    static double dist(std::pair<int, int> from, std::pair<int, int> to);
+    void return_to_max_health();
+
+
+
+
 };
 
 

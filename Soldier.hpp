@@ -16,39 +16,14 @@ class Soldier
 public:
     int health;
     std::pair<int,int> location;
-    static int num_of_foot_soliders;
-    static int num_of_paramedics;
-    static int num_of_snipers;
 
+    virtual void return_to_max_health() = 0;
     virtual int hit(std::vector<std::vector<Soldier*>> board, int rows, int cols) = 0;
     virtual std::pair<int,int> get_loc() = 0;
     virtual int get_id() = 0;
-    virtual Soldier& operator=(Soldier* copy_from) = 0;
-    virtual std::pair<int, int> find_ememy_to_atack(std::vector<std::vector<Soldier*>> board) = 0;
-
-    virtual ~Soldier()
-    {
-        free(this);
-    }
-
-//    {
-//        std::pair<int, int> ans;
-//        double min_dis = DBL_MAX;
-//        for (int i = 0; i < this->rows; ++i)
-//        {
-//            for (int j = 0; j < this->cols; ++j)
-//            {
-//                if (board[i][j]->get_id()!=player_id)
-//                {
-//                    if(dist(dest, board[i][j]->get_loc()) < min_dis)
-//                    {
-//                        ans = board[i][j]->get_loc();
-//                    }
-//                }
-//            }
-//        }
-//        return ans;
-   }
+    virtual std::pair<int, int> find_solider_to_active_the_skill(std::vector<std::vector<Soldier*>> board) = 0;
+    virtual Soldier& copy() = 0;
+};
 
 
 #endif //UNTITLED_SOLIDER_HPP

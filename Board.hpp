@@ -59,7 +59,6 @@ namespace WarGame {
 
         double dist(std::pair<int, int> from, std::pair<int, int> to);
 
-        void attack(std::pair<int, int> attacker_location);
     };
 
 }

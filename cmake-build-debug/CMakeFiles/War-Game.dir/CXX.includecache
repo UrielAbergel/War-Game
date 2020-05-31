@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/yair/Desktop/CPP/War-Game/Board.cpp
+Board.hpp
+/home/yair/Desktop/CPP/War-Game/Board.hpp
+cfloat
+-
+cmath
+/home/yair/Desktop/CPP/War-Game/cmath
+
 /home/yair/Desktop/CPP/War-Game/Board.hpp
 string
 -
@@ -19,38 +27,48 @@ Soldier.hpp
 /home/yair/Desktop/CPP/War-Game/Demo.cpp
 iostream
 -
-DemoGame.hpp
-/home/yair/Desktop/CPP/War-Game/DemoGame.hpp
-FootSoldier.hpp
-/home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
-SniperCommander.hpp
-/home/yair/Desktop/CPP/War-Game/SniperCommander.hpp
-ParamedicCommander.hpp
-/home/yair/Desktop/CPP/War-Game/ParamedicCommander.hpp
+DemoGame.cpp
+/home/yair/Desktop/CPP/War-Game/DemoGame.cpp
+
+/home/yair/Desktop/CPP/War-Game/DemoGame.cpp
+FootSoldier.cpp
+/home/yair/Desktop/CPP/War-Game/FootSoldier.cpp
+FootCommander.cpp
+/home/yair/Desktop/CPP/War-Game/FootCommander.cpp
+cassert
+-
+Board.cpp
+/home/yair/Desktop/CPP/War-Game/Board.cpp
+
+/home/yair/Desktop/CPP/War-Game/FootCommander.cpp
 FootCommander.hpp
 /home/yair/Desktop/CPP/War-Game/FootCommander.hpp
-
-/home/yair/Desktop/CPP/War-Game/DemoGame.hpp
-Board.hpp
-/home/yair/Desktop/CPP/War-Game/Board.hpp
+FootSoldier.hpp
+/home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
 
 /home/yair/Desktop/CPP/War-Game/FootCommander.hpp
 Soldier.hpp
 /home/yair/Desktop/CPP/War-Game/Soldier.hpp
 
+/home/yair/Desktop/CPP/War-Game/FootSoldier.cpp
+FootSoldier.hpp
 /home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
-Soldier.hpp
-/home/yair/Desktop/CPP/War-Game/Soldier.hpp
 
-/home/yair/Desktop/CPP/War-Game/ParamedicCommander.hpp
+/home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
 Soldier.hpp
 /home/yair/Desktop/CPP/War-Game/Soldier.hpp
 Board.hpp
 /home/yair/Desktop/CPP/War-Game/Board.hpp
 
-/home/yair/Desktop/CPP/War-Game/SniperCommander.hpp
-Soldier.hpp
 /home/yair/Desktop/CPP/War-Game/Soldier.hpp
-
-/home/yair/Desktop/CPP/War-Game/Soldier.hpp
+utility
+-
+iostream
+-
+vector
+-
+cfloat
+-
+cmath
+/home/yair/Desktop/CPP/War-Game/cmath
 
