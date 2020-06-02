@@ -44,15 +44,16 @@ std::pair<int, int> FootSoldier::find_solider_to_active_the_skill(std::vector<st
     double _distance;
     for (int i = 0; i < board.size(); ++i) {
         for (int j = 0; j < board.at(0).size(); ++j) {
-            if (board[i][j] != nullptr && board[i][j]->get_id() != player_id) {
+            if (board[i][j] != nullptr && board[i][j]->get_id() != player_id && board[i][j]->get_id() != 0 ) {
                 _distance = FootSoldier::dist(this->get_loc(), board[i][j]->get_loc());
                 if (_distance < min_dis) {
-                    ans = board[i][j]->get_loc();
+                    ans = {i,j};
                     min_dis = _distance;
                 }
             }
         }
     }
+    return ans;
 }
 double FootSoldier::dist(std::pair<int, int> from, std::pair<int, int> to)
 {

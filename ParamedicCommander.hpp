@@ -19,6 +19,13 @@ public:
         this->health = MAX_HEALTH;
     }
 
+    ParamedicCommander(ParamedicCommander& to_copy)
+    {
+        this->player_id = to_copy.player_id;
+        this->health = to_copy.health;
+        this->location = to_copy.location;
+    }
+
     ~ParamedicCommander()
     {
         delete this;

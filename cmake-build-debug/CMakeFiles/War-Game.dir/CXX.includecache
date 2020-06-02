@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/yair/Desktop/CPP/War-Game/Board.cpp
+/home/uriel/CLionProjects/Wargame-a/Board.cpp
 Board.hpp
-/home/yair/Desktop/CPP/War-Game/Board.hpp
+/home/uriel/CLionProjects/Wargame-a/Board.hpp
 cfloat
 -
 cmath
-/home/yair/Desktop/CPP/War-Game/cmath
+/home/uriel/CLionProjects/Wargame-a/cmath
 
-/home/yair/Desktop/CPP/War-Game/Board.hpp
+/home/uriel/CLionProjects/Wargame-a/Board.hpp
 string
 -
 vector
@@ -22,45 +22,45 @@ vector
 stdexcept
 -
 Soldier.hpp
-/home/yair/Desktop/CPP/War-Game/Soldier.hpp
+/home/uriel/CLionProjects/Wargame-a/Soldier.hpp
 
-/home/yair/Desktop/CPP/War-Game/Demo.cpp
+/home/uriel/CLionProjects/Wargame-a/Demo.cpp
 iostream
 -
 DemoGame.cpp
-/home/yair/Desktop/CPP/War-Game/DemoGame.cpp
+/home/uriel/CLionProjects/Wargame-a/DemoGame.cpp
 
-/home/yair/Desktop/CPP/War-Game/DemoGame.cpp
+/home/uriel/CLionProjects/Wargame-a/DemoGame.cpp
 FootSoldier.cpp
-/home/yair/Desktop/CPP/War-Game/FootSoldier.cpp
+/home/uriel/CLionProjects/Wargame-a/FootSoldier.cpp
 FootCommander.cpp
-/home/yair/Desktop/CPP/War-Game/FootCommander.cpp
+/home/uriel/CLionProjects/Wargame-a/FootCommander.cpp
 cassert
 -
 Board.cpp
-/home/yair/Desktop/CPP/War-Game/Board.cpp
+/home/uriel/CLionProjects/Wargame-a/Board.cpp
 
-/home/yair/Desktop/CPP/War-Game/FootCommander.cpp
+/home/uriel/CLionProjects/Wargame-a/FootCommander.cpp
 FootCommander.hpp
-/home/yair/Desktop/CPP/War-Game/FootCommander.hpp
+/home/uriel/CLionProjects/Wargame-a/FootCommander.hpp
 FootSoldier.hpp
-/home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
+/home/uriel/CLionProjects/Wargame-a/FootSoldier.hpp
 
-/home/yair/Desktop/CPP/War-Game/FootCommander.hpp
+/home/uriel/CLionProjects/Wargame-a/FootCommander.hpp
 Soldier.hpp
-/home/yair/Desktop/CPP/War-Game/Soldier.hpp
+/home/uriel/CLionProjects/Wargame-a/Soldier.hpp
 
-/home/yair/Desktop/CPP/War-Game/FootSoldier.cpp
+/home/uriel/CLionProjects/Wargame-a/FootSoldier.cpp
 FootSoldier.hpp
-/home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
+/home/uriel/CLionProjects/Wargame-a/FootSoldier.hpp
 
-/home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
+/home/uriel/CLionProjects/Wargame-a/FootSoldier.hpp
 Soldier.hpp
-/home/yair/Desktop/CPP/War-Game/Soldier.hpp
+/home/uriel/CLionProjects/Wargame-a/Soldier.hpp
 Board.hpp
-/home/yair/Desktop/CPP/War-Game/Board.hpp
+/home/uriel/CLionProjects/Wargame-a/Board.hpp
 
-/home/yair/Desktop/CPP/War-Game/Soldier.hpp
+/home/uriel/CLionProjects/Wargame-a/Soldier.hpp
 utility
 -
 iostream
@@ -70,5 +70,5 @@ vector
 cfloat
 -
 cmath
-/home/yair/Desktop/CPP/War-Game/cmath
+/home/uriel/CLionProjects/Wargame-a/cmath
 

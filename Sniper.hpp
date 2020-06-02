@@ -21,6 +21,14 @@ public:
         this->health = MAX_HEALTH;
     }
 
+    Sniper(Sniper& to_copy)
+    {
+        this->player_id = to_copy.player_id;
+        this->health = to_copy.health;
+        this->location = to_copy.location;
+    }
+
+
     ~Sniper()
     {
         delete this;

@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/Wargame_a.dir/Demo.cpp.o CMakeFiles/Wargame_a.dir/ParamedicCommander.cpp.o CMakeFiles/Wargame_a.dir/Test.cpp.o CMakeFiles/Wargame_a.dir/Game.cpp.o  -o Wargame_a 

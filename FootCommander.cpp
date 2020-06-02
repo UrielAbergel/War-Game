@@ -78,3 +78,4 @@ void FootCommander::return_to_max_health()
     this->health = MAX_HEALTH;
 }
 
+

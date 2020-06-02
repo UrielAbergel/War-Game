@@ -1,4 +1,4 @@
-# Install script for directory: /home/yair/Desktop/CPP/War-Game
+# Install script for directory: /home/uriel/CLionProjects/Wargame-a
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

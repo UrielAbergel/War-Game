@@ -37,8 +37,11 @@ void WarGame::Board::move(uint player_number, std::pair<int,int> source, MoveDIR
     }
     if(dest.first > 0 && dest.first < rows && dest.second > 0 && dest.second < cols) // destination in the board boundaries, good to go
     {
-        board[dest.first][dest.second] = board[source.first][source.second]->copy(); // Copy
-        delete board[source.first][source.second];
+        board[dest.first][dest.second] = board[source.first][source.second]; // Copy
+        board[dest.first][dest.second]->location.first = dest.first;
+        board[dest.first][dest.second]->location.second = dest.second;
+
+        board[source.first][source.second] = nullptr;
     }
     else                                            // destination is out boundaries
     {

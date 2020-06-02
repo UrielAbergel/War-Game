@@ -20,6 +20,13 @@ public:
         this->health = MAX_HEALTH;
     }
 
+    FootCommander(FootCommander& to_copy)
+    {
+        this->player_id = to_copy.player_id;
+        this->health = to_copy.health;
+        this->location = to_copy.location;
+    }
+
     ~FootCommander()
     {
         delete this;
@@ -31,9 +38,7 @@ public:
     int get_id();
     Soldier& operator=(Soldier* copy_from);
     void return_to_max_health();
-
 };
-
 
 
 #endif //UNTITLED_FOOTCOMMANDER_HPP
