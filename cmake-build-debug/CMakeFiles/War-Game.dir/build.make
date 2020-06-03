@@ -122,13 +122,69 @@ CMakeFiles/War-Game.dir/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/War-Game.dir/Board.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/Board.cpp -o CMakeFiles/War-Game.dir/Board.cpp.s
 
+CMakeFiles/War-Game.dir/SniperCommander.cpp.o: CMakeFiles/War-Game.dir/flags.make
+CMakeFiles/War-Game.dir/SniperCommander.cpp.o: ../SniperCommander.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/War-Game.dir/SniperCommander.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/War-Game.dir/SniperCommander.cpp.o -c /home/yair/Desktop/CPP/War-Game/SniperCommander.cpp
+
+CMakeFiles/War-Game.dir/SniperCommander.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/War-Game.dir/SniperCommander.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/Desktop/CPP/War-Game/SniperCommander.cpp > CMakeFiles/War-Game.dir/SniperCommander.cpp.i
+
+CMakeFiles/War-Game.dir/SniperCommander.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/War-Game.dir/SniperCommander.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/SniperCommander.cpp -o CMakeFiles/War-Game.dir/SniperCommander.cpp.s
+
+CMakeFiles/War-Game.dir/Sniper.cpp.o: CMakeFiles/War-Game.dir/flags.make
+CMakeFiles/War-Game.dir/Sniper.cpp.o: ../Sniper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/War-Game.dir/Sniper.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/War-Game.dir/Sniper.cpp.o -c /home/yair/Desktop/CPP/War-Game/Sniper.cpp
+
+CMakeFiles/War-Game.dir/Sniper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/War-Game.dir/Sniper.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/Desktop/CPP/War-Game/Sniper.cpp > CMakeFiles/War-Game.dir/Sniper.cpp.i
+
+CMakeFiles/War-Game.dir/Sniper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/War-Game.dir/Sniper.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/Sniper.cpp -o CMakeFiles/War-Game.dir/Sniper.cpp.s
+
+CMakeFiles/War-Game.dir/Paramedic.cpp.o: CMakeFiles/War-Game.dir/flags.make
+CMakeFiles/War-Game.dir/Paramedic.cpp.o: ../Paramedic.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/War-Game.dir/Paramedic.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/War-Game.dir/Paramedic.cpp.o -c /home/yair/Desktop/CPP/War-Game/Paramedic.cpp
+
+CMakeFiles/War-Game.dir/Paramedic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/War-Game.dir/Paramedic.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/Desktop/CPP/War-Game/Paramedic.cpp > CMakeFiles/War-Game.dir/Paramedic.cpp.i
+
+CMakeFiles/War-Game.dir/Paramedic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/War-Game.dir/Paramedic.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/Paramedic.cpp -o CMakeFiles/War-Game.dir/Paramedic.cpp.s
+
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o: CMakeFiles/War-Game.dir/flags.make
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o: ../ParamedicCommander.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o -c /home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp
+
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/War-Game.dir/ParamedicCommander.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp > CMakeFiles/War-Game.dir/ParamedicCommander.cpp.i
+
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/War-Game.dir/ParamedicCommander.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp -o CMakeFiles/War-Game.dir/ParamedicCommander.cpp.s
+
 # Object files for target War-Game
 War__Game_OBJECTS = \
 "CMakeFiles/War-Game.dir/Demo.cpp.o" \
 "CMakeFiles/War-Game.dir/DemoGame.cpp.o" \
 "CMakeFiles/War-Game.dir/FootSoldier.cpp.o" \
 "CMakeFiles/War-Game.dir/FootCommander.cpp.o" \
-"CMakeFiles/War-Game.dir/Board.cpp.o"
+"CMakeFiles/War-Game.dir/Board.cpp.o" \
+"CMakeFiles/War-Game.dir/SniperCommander.cpp.o" \
+"CMakeFiles/War-Game.dir/Sniper.cpp.o" \
+"CMakeFiles/War-Game.dir/Paramedic.cpp.o" \
+"CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o"
 
 # External object files for target War-Game
 War__Game_EXTERNAL_OBJECTS =
@@ -138,9 +194,13 @@ War-Game: CMakeFiles/War-Game.dir/DemoGame.cpp.o
 War-Game: CMakeFiles/War-Game.dir/FootSoldier.cpp.o
 War-Game: CMakeFiles/War-Game.dir/FootCommander.cpp.o
 War-Game: CMakeFiles/War-Game.dir/Board.cpp.o
+War-Game: CMakeFiles/War-Game.dir/SniperCommander.cpp.o
+War-Game: CMakeFiles/War-Game.dir/Sniper.cpp.o
+War-Game: CMakeFiles/War-Game.dir/Paramedic.cpp.o
+War-Game: CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o
 War-Game: CMakeFiles/War-Game.dir/build.make
 War-Game: CMakeFiles/War-Game.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable War-Game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable War-Game"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/War-Game.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -9,6 +9,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/yair/Desktop/CPP/War-Game/DemoGame.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/War-Game.dir/DemoGame.cpp.o"
   "/home/yair/Desktop/CPP/War-Game/FootCommander.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/War-Game.dir/FootCommander.cpp.o"
   "/home/yair/Desktop/CPP/War-Game/FootSoldier.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/War-Game.dir/FootSoldier.cpp.o"
+  "/home/yair/Desktop/CPP/War-Game/Paramedic.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/War-Game.dir/Paramedic.cpp.o"
+  "/home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o"
+  "/home/yair/Desktop/CPP/War-Game/Sniper.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/War-Game.dir/Sniper.cpp.o"
+  "/home/yair/Desktop/CPP/War-Game/SniperCommander.cpp" "/home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/War-Game.dir/SniperCommander.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

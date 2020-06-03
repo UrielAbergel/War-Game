@@ -111,6 +111,30 @@
 		<Unit filename="/home/yair/Desktop/CPP/War-Game/FootSoldier.hpp">
 			<Option target="War-Game"/>
 		</Unit>
+		<Unit filename="/home/yair/Desktop/CPP/War-Game/Paramedic.cpp">
+			<Option target="War-Game"/>
+		</Unit>
+		<Unit filename="/home/yair/Desktop/CPP/War-Game/Paramedic.hpp">
+			<Option target="War-Game"/>
+		</Unit>
+		<Unit filename="/home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp">
+			<Option target="War-Game"/>
+		</Unit>
+		<Unit filename="/home/yair/Desktop/CPP/War-Game/ParamedicCommander.hpp">
+			<Option target="War-Game"/>
+		</Unit>
+		<Unit filename="/home/yair/Desktop/CPP/War-Game/Sniper.cpp">
+			<Option target="War-Game"/>
+		</Unit>
+		<Unit filename="/home/yair/Desktop/CPP/War-Game/Sniper.hpp">
+			<Option target="War-Game"/>
+		</Unit>
+		<Unit filename="/home/yair/Desktop/CPP/War-Game/SniperCommander.cpp">
+			<Option target="War-Game"/>
+		</Unit>
+		<Unit filename="/home/yair/Desktop/CPP/War-Game/SniperCommander.hpp">
+			<Option target="War-Game"/>
+		</Unit>
 		<Unit filename="/home/yair/Desktop/CPP/War-Game/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

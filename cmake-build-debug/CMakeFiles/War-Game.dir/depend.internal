@@ -9,6 +9,12 @@ CMakeFiles/War-Game.dir/Demo.cpp.o
  /home/yair/Desktop/CPP/War-Game/Board.hpp
  /home/yair/Desktop/CPP/War-Game/Demo.cpp
  /home/yair/Desktop/CPP/War-Game/DemoGame.hpp
+ /home/yair/Desktop/CPP/War-Game/FootCommander.hpp
+ /home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
+ /home/yair/Desktop/CPP/War-Game/Paramedic.hpp
+ /home/yair/Desktop/CPP/War-Game/ParamedicCommander.hpp
+ /home/yair/Desktop/CPP/War-Game/Sniper.hpp
+ /home/yair/Desktop/CPP/War-Game/SniperCommander.hpp
  /home/yair/Desktop/CPP/War-Game/Soldier.hpp
 CMakeFiles/War-Game.dir/DemoGame.cpp.o
  /home/yair/Desktop/CPP/War-Game/Board.hpp
@@ -26,4 +32,22 @@ CMakeFiles/War-Game.dir/FootSoldier.cpp.o
  /home/yair/Desktop/CPP/War-Game/Board.hpp
  /home/yair/Desktop/CPP/War-Game/FootSoldier.cpp
  /home/yair/Desktop/CPP/War-Game/FootSoldier.hpp
+ /home/yair/Desktop/CPP/War-Game/Soldier.hpp
+CMakeFiles/War-Game.dir/Paramedic.cpp.o
+ /home/yair/Desktop/CPP/War-Game/Paramedic.cpp
+ /home/yair/Desktop/CPP/War-Game/Paramedic.hpp
+ /home/yair/Desktop/CPP/War-Game/Soldier.hpp
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o
+ /home/yair/Desktop/CPP/War-Game/Paramedic.hpp
+ /home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp
+ /home/yair/Desktop/CPP/War-Game/ParamedicCommander.hpp
+ /home/yair/Desktop/CPP/War-Game/Soldier.hpp
+CMakeFiles/War-Game.dir/Sniper.cpp.o
+ /home/yair/Desktop/CPP/War-Game/Sniper.cpp
+ /home/yair/Desktop/CPP/War-Game/Sniper.hpp
+ /home/yair/Desktop/CPP/War-Game/Soldier.hpp
+CMakeFiles/War-Game.dir/SniperCommander.cpp.o
+ /home/yair/Desktop/CPP/War-Game/Sniper.hpp
+ /home/yair/Desktop/CPP/War-Game/SniperCommander.cpp
+ /home/yair/Desktop/CPP/War-Game/SniperCommander.hpp
  /home/yair/Desktop/CPP/War-Game/Soldier.hpp

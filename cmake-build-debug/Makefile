@@ -258,6 +258,114 @@ FootSoldier.cpp.s:
 	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/FootSoldier.cpp.s
 .PHONY : FootSoldier.cpp.s
 
+Paramedic.o: Paramedic.cpp.o
+
+.PHONY : Paramedic.o
+
+# target to build an object file
+Paramedic.cpp.o:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Paramedic.cpp.o
+.PHONY : Paramedic.cpp.o
+
+Paramedic.i: Paramedic.cpp.i
+
+.PHONY : Paramedic.i
+
+# target to preprocess a source file
+Paramedic.cpp.i:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Paramedic.cpp.i
+.PHONY : Paramedic.cpp.i
+
+Paramedic.s: Paramedic.cpp.s
+
+.PHONY : Paramedic.s
+
+# target to generate assembly for a file
+Paramedic.cpp.s:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Paramedic.cpp.s
+.PHONY : Paramedic.cpp.s
+
+ParamedicCommander.o: ParamedicCommander.cpp.o
+
+.PHONY : ParamedicCommander.o
+
+# target to build an object file
+ParamedicCommander.cpp.o:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o
+.PHONY : ParamedicCommander.cpp.o
+
+ParamedicCommander.i: ParamedicCommander.cpp.i
+
+.PHONY : ParamedicCommander.i
+
+# target to preprocess a source file
+ParamedicCommander.cpp.i:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/ParamedicCommander.cpp.i
+.PHONY : ParamedicCommander.cpp.i
+
+ParamedicCommander.s: ParamedicCommander.cpp.s
+
+.PHONY : ParamedicCommander.s
+
+# target to generate assembly for a file
+ParamedicCommander.cpp.s:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/ParamedicCommander.cpp.s
+.PHONY : ParamedicCommander.cpp.s
+
+Sniper.o: Sniper.cpp.o
+
+.PHONY : Sniper.o
+
+# target to build an object file
+Sniper.cpp.o:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Sniper.cpp.o
+.PHONY : Sniper.cpp.o
+
+Sniper.i: Sniper.cpp.i
+
+.PHONY : Sniper.i
+
+# target to preprocess a source file
+Sniper.cpp.i:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Sniper.cpp.i
+.PHONY : Sniper.cpp.i
+
+Sniper.s: Sniper.cpp.s
+
+.PHONY : Sniper.s
+
+# target to generate assembly for a file
+Sniper.cpp.s:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Sniper.cpp.s
+.PHONY : Sniper.cpp.s
+
+SniperCommander.o: SniperCommander.cpp.o
+
+.PHONY : SniperCommander.o
+
+# target to build an object file
+SniperCommander.cpp.o:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/SniperCommander.cpp.o
+.PHONY : SniperCommander.cpp.o
+
+SniperCommander.i: SniperCommander.cpp.i
+
+.PHONY : SniperCommander.i
+
+# target to preprocess a source file
+SniperCommander.cpp.i:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/SniperCommander.cpp.i
+.PHONY : SniperCommander.cpp.i
+
+SniperCommander.s: SniperCommander.cpp.s
+
+.PHONY : SniperCommander.s
+
+# target to generate assembly for a file
+SniperCommander.cpp.s:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/SniperCommander.cpp.s
+.PHONY : SniperCommander.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +390,18 @@ help:
 	@echo "... FootSoldier.o"
 	@echo "... FootSoldier.i"
 	@echo "... FootSoldier.s"
+	@echo "... Paramedic.o"
+	@echo "... Paramedic.i"
+	@echo "... Paramedic.s"
+	@echo "... ParamedicCommander.o"
+	@echo "... ParamedicCommander.i"
+	@echo "... ParamedicCommander.s"
+	@echo "... Sniper.o"
+	@echo "... Sniper.i"
+	@echo "... Sniper.s"
+	@echo "... SniperCommander.o"
+	@echo "... SniperCommander.i"
+	@echo "... SniperCommander.s"
 .PHONY : help
 
 

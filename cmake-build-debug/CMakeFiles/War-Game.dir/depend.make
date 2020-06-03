@@ -8,6 +8,12 @@ CMakeFiles/War-Game.dir/Board.cpp.o: ../Soldier.hpp
 CMakeFiles/War-Game.dir/Demo.cpp.o: ../Board.hpp
 CMakeFiles/War-Game.dir/Demo.cpp.o: ../Demo.cpp
 CMakeFiles/War-Game.dir/Demo.cpp.o: ../DemoGame.hpp
+CMakeFiles/War-Game.dir/Demo.cpp.o: ../FootCommander.hpp
+CMakeFiles/War-Game.dir/Demo.cpp.o: ../FootSoldier.hpp
+CMakeFiles/War-Game.dir/Demo.cpp.o: ../Paramedic.hpp
+CMakeFiles/War-Game.dir/Demo.cpp.o: ../ParamedicCommander.hpp
+CMakeFiles/War-Game.dir/Demo.cpp.o: ../Sniper.hpp
+CMakeFiles/War-Game.dir/Demo.cpp.o: ../SniperCommander.hpp
 CMakeFiles/War-Game.dir/Demo.cpp.o: ../Soldier.hpp
 
 CMakeFiles/War-Game.dir/DemoGame.cpp.o: ../Board.hpp
@@ -26,4 +32,22 @@ CMakeFiles/War-Game.dir/FootSoldier.cpp.o: ../Board.hpp
 CMakeFiles/War-Game.dir/FootSoldier.cpp.o: ../FootSoldier.cpp
 CMakeFiles/War-Game.dir/FootSoldier.cpp.o: ../FootSoldier.hpp
 CMakeFiles/War-Game.dir/FootSoldier.cpp.o: ../Soldier.hpp
+
+CMakeFiles/War-Game.dir/Paramedic.cpp.o: ../Paramedic.cpp
+CMakeFiles/War-Game.dir/Paramedic.cpp.o: ../Paramedic.hpp
+CMakeFiles/War-Game.dir/Paramedic.cpp.o: ../Soldier.hpp
+
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o: ../Paramedic.hpp
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o: ../ParamedicCommander.cpp
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o: ../ParamedicCommander.hpp
+CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o: ../Soldier.hpp
+
+CMakeFiles/War-Game.dir/Sniper.cpp.o: ../Sniper.cpp
+CMakeFiles/War-Game.dir/Sniper.cpp.o: ../Sniper.hpp
+CMakeFiles/War-Game.dir/Sniper.cpp.o: ../Soldier.hpp
+
+CMakeFiles/War-Game.dir/SniperCommander.cpp.o: ../Sniper.hpp
+CMakeFiles/War-Game.dir/SniperCommander.cpp.o: ../SniperCommander.cpp
+CMakeFiles/War-Game.dir/SniperCommander.cpp.o: ../SniperCommander.hpp
+CMakeFiles/War-Game.dir/SniperCommander.cpp.o: ../Soldier.hpp
 

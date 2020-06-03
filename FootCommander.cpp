@@ -7,7 +7,7 @@
 
 #define DAMAGE 20
 
-int FootCommander::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)
+int FootCommander::hit(std::vector<std::vector<Soldier*>> & board, int rows, int cols)
 {
     std::pair<int, int> enemy_to_attack = find_solider_to_active_the_skill(board);
     board[enemy_to_attack.first][enemy_to_attack.second]->health -= DAMAGE;
@@ -28,6 +28,7 @@ int FootCommander::hit(std::vector<std::vector<Soldier*>> board, int rows, int c
     if(board[enemy_to_attack.first][enemy_to_attack.second]->health <= 0)
     {
         delete board[enemy_to_attack.first][enemy_to_attack.second];
+        board[enemy_to_attack.first][enemy_to_attack.second] = nullptr;
         return 1;                                        // dead
     }
     return 0;                                            // alive
@@ -65,7 +66,7 @@ std::pair<int, int> FootCommander::find_solider_to_active_the_skill(std::vector<
                 _distance = FootSoldier::dist(this->get_loc(), board[i][j]->get_loc());
                 if( _distance < min_dis)
                 {
-                    ans = board[i][j]->get_loc();
+                    ans = {i,j};
                     min_dis = _distance;
                 }
             }

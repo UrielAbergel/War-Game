@@ -31,7 +31,7 @@ public:
         delete this;
     }
 
-    int hit(std::vector<std::vector<Soldier*>> board, int rows, int cols);
+    int hit(std::vector<std::vector<Soldier*>> & board, int rows, int cols);
     std::pair<int,int> get_loc();
     int get_id();
     Soldier& operator=(Soldier* copy_from);
