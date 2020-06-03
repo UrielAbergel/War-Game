@@ -1,9 +1,10 @@
 //
 // Created by uriel on 20/05/2020.
 //
-
+#pragma once
 #include "FootCommander.hpp"
 #include "FootSoldier.hpp"
+
 #define DAMAGE 20
 
 int FootCommander::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)

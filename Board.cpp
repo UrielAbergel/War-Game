@@ -1,7 +1,7 @@
 //
 // Created by uriel on 20/05/2020.
 //
-
+#pragma once
 #include "Board.hpp"
 #include <cfloat>
 #include "cmath"

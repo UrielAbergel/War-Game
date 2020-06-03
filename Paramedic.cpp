@@ -1,7 +1,7 @@
 //
 // Created by uriel on 20/05/2020.
 //
-
+#pragma once
 #include "Paramedic.hpp"
 
 int Paramedic::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)

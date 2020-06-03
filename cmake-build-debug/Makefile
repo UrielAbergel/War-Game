@@ -48,10 +48,10 @@ RM = /snap/clion/112/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uriel/CLionProjects/Wargame-a
+CMAKE_SOURCE_DIR = /home/yair/Desktop/CPP/War-Game
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uriel/CLionProjects/Wargame-a/cmake-build-debug
+CMAKE_BINARY_DIR = /home/yair/Desktop/CPP/War-Game/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles /home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles /home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uriel/CLionProjects/Wargame-a/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yair/Desktop/CPP/War-Game/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ War-Game/fast:
 	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/build
 .PHONY : War-Game/fast
 
+Board.o: Board.cpp.o
+
+.PHONY : Board.o
+
+# target to build an object file
+Board.cpp.o:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Board.cpp.o
+.PHONY : Board.cpp.o
+
+Board.i: Board.cpp.i
+
+.PHONY : Board.i
+
+# target to preprocess a source file
+Board.cpp.i:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Board.cpp.i
+.PHONY : Board.cpp.i
+
+Board.s: Board.cpp.s
+
+.PHONY : Board.s
+
+# target to generate assembly for a file
+Board.cpp.s:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Board.cpp.s
+.PHONY : Board.cpp.s
+
 Demo.o: Demo.cpp.o
 
 .PHONY : Demo.o
@@ -150,6 +177,87 @@ Demo.cpp.s:
 	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/Demo.cpp.s
 .PHONY : Demo.cpp.s
 
+DemoGame.o: DemoGame.cpp.o
+
+.PHONY : DemoGame.o
+
+# target to build an object file
+DemoGame.cpp.o:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/DemoGame.cpp.o
+.PHONY : DemoGame.cpp.o
+
+DemoGame.i: DemoGame.cpp.i
+
+.PHONY : DemoGame.i
+
+# target to preprocess a source file
+DemoGame.cpp.i:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/DemoGame.cpp.i
+.PHONY : DemoGame.cpp.i
+
+DemoGame.s: DemoGame.cpp.s
+
+.PHONY : DemoGame.s
+
+# target to generate assembly for a file
+DemoGame.cpp.s:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/DemoGame.cpp.s
+.PHONY : DemoGame.cpp.s
+
+FootCommander.o: FootCommander.cpp.o
+
+.PHONY : FootCommander.o
+
+# target to build an object file
+FootCommander.cpp.o:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/FootCommander.cpp.o
+.PHONY : FootCommander.cpp.o
+
+FootCommander.i: FootCommander.cpp.i
+
+.PHONY : FootCommander.i
+
+# target to preprocess a source file
+FootCommander.cpp.i:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/FootCommander.cpp.i
+.PHONY : FootCommander.cpp.i
+
+FootCommander.s: FootCommander.cpp.s
+
+.PHONY : FootCommander.s
+
+# target to generate assembly for a file
+FootCommander.cpp.s:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/FootCommander.cpp.s
+.PHONY : FootCommander.cpp.s
+
+FootSoldier.o: FootSoldier.cpp.o
+
+.PHONY : FootSoldier.o
+
+# target to build an object file
+FootSoldier.cpp.o:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/FootSoldier.cpp.o
+.PHONY : FootSoldier.cpp.o
+
+FootSoldier.i: FootSoldier.cpp.i
+
+.PHONY : FootSoldier.i
+
+# target to preprocess a source file
+FootSoldier.cpp.i:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/FootSoldier.cpp.i
+.PHONY : FootSoldier.cpp.i
+
+FootSoldier.s: FootSoldier.cpp.s
+
+.PHONY : FootSoldier.s
+
+# target to generate assembly for a file
+FootSoldier.cpp.s:
+	$(MAKE) -f CMakeFiles/War-Game.dir/build.make CMakeFiles/War-Game.dir/FootSoldier.cpp.s
+.PHONY : FootSoldier.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +267,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... War-Game"
+	@echo "... Board.o"
+	@echo "... Board.i"
+	@echo "... Board.s"
 	@echo "... Demo.o"
 	@echo "... Demo.i"
 	@echo "... Demo.s"
+	@echo "... DemoGame.o"
+	@echo "... DemoGame.i"
+	@echo "... DemoGame.s"
+	@echo "... FootCommander.o"
+	@echo "... FootCommander.i"
+	@echo "... FootCommander.s"
+	@echo "... FootSoldier.o"
+	@echo "... FootSoldier.i"
+	@echo "... FootSoldier.s"
 .PHONY : help
 
 

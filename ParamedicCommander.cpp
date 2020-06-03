@@ -1,6 +1,7 @@
 //
 // Created by uriel on 20/05/2020.
 //
+#pragma once
 #include "ParamedicCommander.hpp"
 #include "Paramedic.hpp"
 
