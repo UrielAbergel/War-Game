@@ -8,134 +8,84 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/yair/Desktop/CPP/War-Game/cmake-build-debug"/>
+				<Option working_dir="/home/uriel/CLionProjects/Wargame-a/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/yair/Desktop/CPP/War-Game/cmake-build-debug"/>
+				<Option working_dir="/home/uriel/CLionProjects/Wargame-a/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/yair/Desktop/CPP/War-Game/cmake-build-debug"/>
+				<Option working_dir="/home/uriel/CLionProjects/Wargame-a/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="War-Game">
-				<Option output="/home/yair/Desktop/CPP/War-Game/cmake-build-debug/War-Game" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yair/Desktop/CPP/War-Game/cmake-build-debug"/>
+			<Target title="Wargame-a">
+				<Option output="/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Wargame-a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/uriel/CLionProjects/Wargame-a/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 War-Game"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 Wargame-a"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="War-Game/fast">
-				<Option output="/home/yair/Desktop/CPP/War-Game/cmake-build-debug/War-Game" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/yair/Desktop/CPP/War-Game/cmake-build-debug"/>
+			<Target title="Wargame-a/fast">
+				<Option output="/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Wargame-a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/uriel/CLionProjects/Wargame-a/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 War-Game/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/yair/Desktop/CPP/War-Game/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 Wargame-a/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/uriel/CLionProjects/Wargame-a/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/Board.cpp">
-			<Option target="War-Game"/>
+		<Unit filename="/home/uriel/CLionProjects/Wargame-a/Demo.cpp">
+			<Option target="Wargame-a"/>
 		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/Board.hpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/Demo.cpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/DemoGame.cpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/DemoGame.hpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/FootCommander.cpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/FootCommander.hpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/FootSoldier.cpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/FootSoldier.hpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/Paramedic.cpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/Paramedic.hpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/ParamedicCommander.cpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/ParamedicCommander.hpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/Sniper.cpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/Sniper.hpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/SniperCommander.cpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/SniperCommander.hpp">
-			<Option target="War-Game"/>
-		</Unit>
-		<Unit filename="/home/yair/Desktop/CPP/War-Game/CMakeLists.txt">
+		<Unit filename="/home/uriel/CLionProjects/Wargame-a/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

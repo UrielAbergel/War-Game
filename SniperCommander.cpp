@@ -19,7 +19,7 @@ int SniperCommander::hit(std::vector<std::vector<Soldier*>> & board, int rows, i
         {
             if (board[i][j] != nullptr && board[i][j]->get_id() == player_id)
             {
-                if (typeid(board[i][j]) == typeid(Sniper))
+                if (dynamic_cast<Sniper*>(board[i][j]))
                 {
                     board[i][j]->hit(board ,rows, cols);
                 }

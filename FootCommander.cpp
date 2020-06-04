@@ -18,18 +18,21 @@ int FootCommander::hit(std::vector<std::vector<Soldier*>> & board, int rows, int
         {
             if (board[i][j] != nullptr && board[i][j]->get_id() == player_id)
             {
-              if (typeid(board[i][j]) == typeid(FootSoldier))
+              if ( dynamic_cast<FootSoldier*>(board[i][j]))
               {
                   board[i][j]->hit(board ,rows, cols);
               }
             }
         }
     }
+    if(board[enemy_to_attack.first][enemy_to_attack.second] != NULL)
+    {
     if(board[enemy_to_attack.first][enemy_to_attack.second]->health <= 0)
     {
         delete board[enemy_to_attack.first][enemy_to_attack.second];
         board[enemy_to_attack.first][enemy_to_attack.second] = nullptr;
         return 1;                                        // dead
+    }
     }
     return 0;                                            // alive
 
@@ -63,7 +66,7 @@ std::pair<int, int> FootCommander::find_solider_to_active_the_skill(std::vector<
         {
             if (board[i][j] != nullptr && board[i][j]->get_id() != player_id)
             {
-                _distance = FootSoldier::dist(this->get_loc(), board[i][j]->get_loc());
+                _distance = FootSoldier::dist(this->get_loc(), {i,j});
                 if( _distance < min_dis)
                 {
                     ans = {i,j};

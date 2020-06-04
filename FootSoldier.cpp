@@ -46,7 +46,7 @@ std::pair<int, int> FootSoldier::find_solider_to_active_the_skill(std::vector<st
     for (int i = 0; i < board.size(); ++i) {
         for (int j = 0; j < board.at(0).size(); ++j) {
             if (board[i][j] != nullptr && board[i][j]->get_id() != player_id && board[i][j]->get_id() != 0 ) {
-                _distance = FootSoldier::dist(this->get_loc(), board[i][j]->get_loc());
+                _distance = FootSoldier::dist(this->get_loc(), {i,j});
                 if (_distance < min_dis) {
                     ans = {i,j};
                     min_dis = _distance;

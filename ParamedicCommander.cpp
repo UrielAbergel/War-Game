@@ -14,7 +14,7 @@ int ParamedicCommander::hit(std::vector<std::vector<Soldier*>> & board, int rows
         {
             if (board[i][j] != nullptr && board[i][j]->get_id() == player_id)
             {
-                if (typeid(board[i][j]) == typeid(Paramedic))
+                if (dynamic_cast<Paramedic*>(board[i][j]))
                 {
                     board[i][j]->hit(board ,rows, cols);
                 }
