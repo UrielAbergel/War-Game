@@ -1,18 +1,19 @@
 //
 // Created by uriel on 20/05/2020.
 //
-
+#pragma once
 #include "FootSoldier.hpp"
 
 #define DAMAGE 10
 
-int FootSoldier::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)
+int FootSoldier::hit(std::vector<std::vector<Soldier*>>& board, int rows, int cols)
 {
     std::pair<int, int> enemy_to_attack = find_solider_to_active_the_skill(board);
     board[enemy_to_attack.first][enemy_to_attack.second]->health -= DAMAGE;
     if(board[enemy_to_attack.first][enemy_to_attack.second]->health <= 0)
     {
         delete board[enemy_to_attack.first][enemy_to_attack.second];
+        board[enemy_to_attack.first][enemy_to_attack.second] = nullptr;
         return 1;                                        // dead
     }
     return 0;                                            // alive

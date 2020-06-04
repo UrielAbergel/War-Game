@@ -1,12 +1,12 @@
 //
 // Created by uriel on 20/05/2020.
 //
-
+#pragma once
 #include "Sniper.hpp"
 
 #define DAMAGE 50
 
-int Sniper::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)
+int Sniper::hit(std::vector<std::vector<Soldier*>>& board, int rows, int cols)
 {
     std::pair<int,int> to_attack = find_solider_to_active_the_skill(board);
     board[to_attack.first][to_attack.second]->health -= DAMAGE;
@@ -14,6 +14,7 @@ int Sniper::hit(std::vector<std::vector<Soldier*>> board, int rows, int cols)
     if(board[to_attack.first][to_attack.second]->health <= 0)
     {
         delete board[to_attack.first][to_attack.second];
+        board[to_attack.first][to_attack.second] = nullptr;
         return 1;                                        // dead
     }
     return 0;
@@ -46,7 +47,7 @@ std::pair<int, int> Sniper::find_solider_to_active_the_skill(std::vector<std::ve
             {
                 if(board[i][j]->health > max)
                 {
-                    ans = board[i][j]->get_loc();
+                    ans = {i,j};
                     max = board[i][j]->health;
                 }
             }

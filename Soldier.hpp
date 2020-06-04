@@ -18,7 +18,7 @@ public:
     std::pair<int,int> location;
 
     virtual void return_to_max_health() = 0;
-    virtual int hit(std::vector<std::vector<Soldier*>> board, int rows, int cols) = 0;
+    virtual int hit(std::vector<std::vector<Soldier*>> & board, int rows, int cols) = 0;
     virtual std::pair<int,int> get_loc() = 0;
     virtual int get_id() = 0;
     virtual std::pair<int, int> find_solider_to_active_the_skill(std::vector<std::vector<Soldier*>> board) = 0;

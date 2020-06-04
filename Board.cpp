@@ -1,7 +1,7 @@
 //
 // Created by uriel on 20/05/2020.
 //
-
+#pragma once
 #include "Board.hpp"
 #include <cfloat>
 #include "cmath"
@@ -11,9 +11,13 @@ bool WarGame::Board::has_soldiers(uint player_number) const
 {
     for (int i = 0; i < this->rows; i++)
     {
-        for (int j = 0; j < this->cols; j ++)
+        for (int j = 0; j < this->cols; j++)
         {
-            if(this->board[i][j] != nullptr && this->board[i][j]->get_id() == player_number) return true;
+//            std::cout << "i = " << i << " j = " << j << std::endl;
+            if(this->board[i][j] != nullptr && this->board[i][j]->get_id() == player_number)
+            {
+                return true;
+            }
         }
     }
     return false;
@@ -22,7 +26,10 @@ bool WarGame::Board::has_soldiers(uint player_number) const
 void WarGame::Board::move(uint player_number, std::pair<int,int> source, MoveDIR direction)
 {
     std::pair<int,int> dest = return_dest_loc(source, direction);
-
+    if(dest.first < 0 || dest.first >= rows || dest.second < 0 || dest.second >= cols) // destination in the board boundaries, good to go
+    {
+        throw std::invalid_argument("destination is out boundaries");
+    }
     if(board[source.first][source.second] == nullptr)
     {
         throw std::invalid_argument("There is no player in the source location");
@@ -35,7 +42,7 @@ void WarGame::Board::move(uint player_number, std::pair<int,int> source, MoveDIR
     {
         throw std::invalid_argument("The player in the source location do not belong to you!");
     }
-    if(dest.first > 0 && dest.first < rows && dest.second > 0 && dest.second < cols) // destination in the board boundaries, good to go
+    if(dest.first >= 0 && dest.first < rows && dest.second >= 0 && dest.second < cols) // destination in the board boundaries, good to go
     {
         board[dest.first][dest.second] = board[source.first][source.second]; // Copy
         board[dest.first][dest.second]->location.first = dest.first;
@@ -48,8 +55,10 @@ void WarGame::Board::move(uint player_number, std::pair<int,int> source, MoveDIR
         std::cout << "destination is out boundaries" << std::endl;
         return;
     }
-
-    this->board[dest.first][dest.second]->hit(this->board, this->rows, this->cols);   // preform attack
+    if(player_number == 1 && has_soldiers(2))
+        this->board[dest.first][dest.second]->hit(this->board, this->rows, this->cols);   // player 1 preform attack
+    else if(player_number == 2 && has_soldiers(1))
+        this->board[dest.first][dest.second]->hit(this->board, this->rows, this->cols);   // player 2 preform attack
 }
 
 std::pair<int,int> WarGame::Board::return_dest_loc(std::pair<int,int> source, MoveDIR direction)

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/War-Game.dir/Demo.cpp.o  -o War-Game 
+/usr/bin/c++  -g   CMakeFiles/War-Game.dir/Demo.cpp.o CMakeFiles/War-Game.dir/DemoGame.cpp.o CMakeFiles/War-Game.dir/FootSoldier.cpp.o CMakeFiles/War-Game.dir/FootCommander.cpp.o CMakeFiles/War-Game.dir/Board.cpp.o CMakeFiles/War-Game.dir/SniperCommander.cpp.o CMakeFiles/War-Game.dir/Sniper.cpp.o CMakeFiles/War-Game.dir/Paramedic.cpp.o CMakeFiles/War-Game.dir/ParamedicCommander.cpp.o  -o War-Game 

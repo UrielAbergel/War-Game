@@ -32,7 +32,7 @@ public:
         delete this;
     }
 
-    int hit(std::vector<std::vector<Soldier*>> board, int rows, int cols);
+    int hit(std::vector<std::vector<Soldier*>> & board, int rows, int cols);
     std::pair<int, int> find_solider_to_active_the_skill(std::vector<std::vector<Soldier*>> board);
     std::pair<int,int> get_loc();
     int get_id();
