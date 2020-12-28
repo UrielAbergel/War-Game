@@ -13,7 +13,6 @@ bool WarGame::Board::has_soldiers(uint player_number) const
     {
         for (int j = 0; j < this->cols; j++)
         {
-//            std::cout << "i = " << i << " j = " << j << std::endl;
             if(this->board[i][j] != nullptr && this->board[i][j]->get_id() == player_number)
             {
                 return true;
